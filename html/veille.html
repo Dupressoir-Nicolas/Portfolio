@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Veille — DUPRESSOIR Nicolas · Portfolio BTS SIO SISR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=JetBrains+Mono:wght@300;400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style/style.css" />
+<style>
+  /* ---- Cartes de veille détaillées (bornage / auteur / source / résumé / liens) ---- */
+  .news-card{
+    background: linear-gradient(135deg, rgba(139,0,0,.16), rgba(0,0,0,.45));
+    border: 1px solid rgba(220,38,38,.35);
+    border-radius: 6px;
+    padding: 1rem 1.2rem 1.1rem;
+    margin-bottom: .9rem;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .news-card:hover{ border-color: var(--cyan, #22d3ee); transform: translateX(2px); }
+  .news-card-top{ display:flex; justify-content:space-between; align-items:baseline; gap:.6rem; flex-wrap:wrap; }
+  .news-card .news-num{ font-family: var(--font-mono, 'JetBrains Mono', monospace); color: var(--cyan, #22d3ee); font-size:.72rem; opacity:.85; }
+  .news-card-title{ font-family:'Rajdhani', sans-serif; font-weight:700; font-size:1.02rem; color:#f5e6e0; line-height:1.3; margin:.15rem 0 .3rem; }
+  .news-bornage{ font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size:.62rem; text-transform:uppercase; letter-spacing:.05em; color:#e57373; margin-bottom:.5rem; }
+  .news-meta{ font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size:.64rem; color:#c9a8a8; margin:.4rem 0; display:flex; gap:1.1rem; flex-wrap:wrap; }
+  .news-resume{ font-size:.82rem; line-height:1.48; color:#d8c4c0; margin:.5rem 0 .7rem; }
+  .news-links{ display:flex; gap:1rem; font-family: var(--font-mono, 'JetBrains Mono', monospace); font-size:.68rem; flex-wrap:wrap; }
+  .news-links a{ color: var(--cyan, #22d3ee); text-decoration:none; border-bottom:1px dotted currentColor; }
+  .news-links a:hover{ color:#fff; }
+  .news-links a.pdf-missing{ color:#8a6a6a; border-bottom-style:dashed; cursor:not-allowed; }
+  .news-links a.pdf-missing:hover{ color:#8a6a6a; }
+</style>
+</head>
+<body>
+<div class="scanlines"></div>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="accueil.html" class="nav-logo">ND<span>.portfolio</span></a>
+    <a href="accueil.html">Accueil</a>
+    <a href="veille.html" class="active">Veille</a>
+    <a href="stages.html">Stages</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="rectorat.html">Rectorat</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     PAGE : VEILLE
+════════════════════════════════════════ -->
+<section class="page active" id="veille">
+<div class="container">
+  <div class="section-title">Veille Technologique</div>
+
+  <div class="panel veille-intro">
+    <div class="veille-subject">Sujet de veille : <span>Les nouvelles technologies de transmission de données à très haut débit</span></div>
+    <p>Suivi régulier de l'actualité liée aux réseaux terrestres à très haut débit, aux communications spatiales et satellites, ainsi qu'aux records et innovations en transmission de données.</p>
+    <p style="margin-top:.5rem;font-family:var(--font-mono);font-size:.62rem;color:var(--cyan)">Périmètre : Mars 2026 → Mars 2027 — 2 articles / mois</p>
+  </div>
+
+  <div class="veille-grid">
+    <!-- MARS 2026 -->
+    <div class="month-block">
+      <div class="month-label">Mars 2026</div>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">01</span></div>
+        <h3 class="news-card-title">Record Mondial sur Fibre Optique 430 Tbps</h3>
+        <div class="news-bornage">Bornage : Réseaux terrestres à très haut débit / Records de transmission</div>
+        <div class="news-meta">
+          <span>📅 20 mars 2026</span>
+          <span>Source : ACS – Information Age</span>
+          <span>Auteur : David Braue</span>
+        </div>
+        <p class="news-resume">Une équipe de chercheurs britanniques et japonais a établi un nouveau record mondial en transmettant des données à 430 térabits par seconde (Tbps) sur une fibre optique standard, surpassant leur précédent record de 402 Tbps. Cette avancée, utilisant des longueurs d'onde O-band et une transmission tri-mode, optimise l'efficacité spectrale tout en ouvrant la voie à des capacités réseau accrues.</p>
+        <div class="news-links">
+          <a href="https://ia.acs.org.au/article/2026/new-internet-speed-record-hits-430tbps-over-fibre.html" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_03_20.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">02</span></div>
+        <h3 class="news-card-title">Record Chinois de Communication Laser Satellite-Sol à 120 Gbps</h3>
+        <div class="news-bornage">Bornage : Communications spatiales et satellites</div>
+        <div class="news-meta">
+          <span>📅 30 mars 2026</span>
+          <span>Source : CGTN</span>
+          <span>Auteur : Non précisé</span>
+        </div>
+        <p class="news-resume">La Chine a réussi une expérience d'application opérationnelle de communication laser satellite-sol à une vitesse dépassant 100 Gbps. L'expérience a atteint 120 Gbps avec la transmission réussie d'images de télédétection haute qualité. Ce résultat succède aux records de 10 Gbps (2023) et 60 Gbps (2025) de l'Institut de Recherche en Information Aérospatiale (AIR) de l'Académie Chinoise des Sciences.</p>
+        <div class="news-links">
+          <a href="https://news.cgtn.com/news/2026-01-30/China-sets-new-speed-record-on-space-ground-laser-communication-1KmreK1oD7y/p.html" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_03_30.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+    </div>
+    <!-- AVRIL 2026 -->
+    <div class="month-block">
+      <div class="month-label">Avril 2026</div>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">01</span></div>
+        <h3 class="news-card-title">Un projet de câble sous-marin pour sécuriser l'accès à Internet en Guinée équatoriale</h3>
+        <div class="news-bornage">Bornage : Réseaux Terrestres à Très Haut Débit</div>
+        <div class="news-meta">
+          <span>📅 3 avril 2026</span>
+          <span>Source : SikaFinance</span>
+          <span>Auteur : Non précisé</span>
+        </div>
+        <p class="news-resume">Une étude technique et financière présentée le 2 avril 2026 à Malabo évalue un raccordement à un nouveau câble sous-marin international, dans la continuité du câble de 266 km mis en service en 2023 entre Annobón et São Tomé, d'une capacité de 4,8 térabits.</p>
+        <div class="news-links">
+          <a href="https://www.sikafinance.com/marches/guinee-equatoriale-un-projet-de-cable-sous-marin-a-20-60-millions-deuros-pour-securiser-lacces-a-internet_60867" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_04_03.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">02</span></div>
+        <h3 class="news-card-title">Un laser chinois transmet 1 Gbit/s depuis un satellite géostationnaire avec 2 watts seulement</h3>
+        <div class="news-bornage">Bornage : Communications Spatiales et Satellites</div>
+        <div class="news-meta">
+          <span>📅 22 avril 2026</span>
+          <span>Source : Journal du Geek</span>
+          <span>Auteur : Paul Mercier</span>
+        </div>
+        <p class="news-resume">Depuis l'observatoire de Lijiang (Yunnan), une équipe chinoise a démontré une liaison laser descendante à 1 Gbit/s depuis un satellite géostationnaire à 36 705 km d'altitude, en n'utilisant que 2 watts de puissance d'émission — un rapport débit/puissance jamais documenté à cette distance.</p>
+        <div class="news-links">
+          <a href="https://www.journaldugeek.com/2026/04/22/depuis-lespace-un-laser-chinois-aussi-puissant-quune-veilleuse-vient-de-battre-starlink-a-son-propre-jeu/" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_04_22.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+    </div>
+    <!-- MAI 2026 -->
+    <div class="month-block">
+      <div class="month-label">Mai 2026</div>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">01</span></div>
+        <h3 class="news-card-title">Une station laser au sommet d'une montagne grecque pour tester les communications optiques par satellite</h3>
+        <div class="news-bornage">Bornage : Communications Spatiales et Satellites</div>
+        <div class="news-meta">
+          <span>📅 18 mai 2026</span>
+          <span>Source : The Register</span>
+          <span>Auteur : Carly Page</span>
+        </div>
+        <p class="news-resume">La société lituanienne Astrolight a mis en service une nouvelle station optique au sol au sommet d'une montagne du nord de la Grèce, construite dans le cadre du projet PeakSat mené par l'Université Aristote de Thessalonique avec le soutien de l'ESA, pour tester des liaisons laser avec des CubeSats.</p>
+        <div class="news-links">
+          <a href="https://www.theregister.com/networks/2026/05/18/europe-tests-laser-links-as-satellite-comms-outgrow-radio/5242012" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_05_18.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">02</span></div>
+        <h3 class="news-card-title">La 6G dépasse les 100 Gbps grâce à une puce optique japonaise</h3>
+        <div class="news-bornage">Bornage : Réseaux Terrestres à Très Haut Débit</div>
+        <div class="news-meta">
+          <span>📅 19 mai 2026</span>
+          <span>Source : Generation-NT</span>
+          <span>Auteur : Christian D.</span>
+        </div>
+        <p class="news-resume">Des chercheurs de l'Université de Tokushima ont réalisé une transmission sans fil à 112 Gbps sur la bande 560 GHz grâce à un micropeigne à solitons, rendant le signal stable plus de 27 heures en continu contre 4 minutes auparavant.</p>
+        <div class="news-links">
+          <a href="https://www.generation-nt.com/actualites/soliton-microcombs-6g-tres-haut-debit-2075639" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_05_19.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+    </div>
+    <!-- JUIN 2026 -->
+    <div class="month-block">
+      <div class="month-label">Juin 2026</div>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">01</span></div>
+        <h3 class="news-card-title">Record mondial confirmé : 450 Tb/s sur un lien métropolitain en fibre déjà déployée</h3>
+        <div class="news-bornage">Bornage : Réseaux Terrestres à Très Haut Débit</div>
+        <div class="news-meta">
+          <span>📅 1er juin 2026</span>
+          <span>Source : NICT / EurekAlert</span>
+          <span>Auteur : Non précisé</span>
+        </div>
+        <p class="news-resume">Le NICT (Japon) et cinq partenaires internationaux ont démontré 450 Tb/s sur un lien de 39 km entre l'University College London et un centre de données à Canary Wharf, en exploitant simultanément cinq bandes optiques (O, E, S, C, L) sur une fibre standard déjà enterrée.</p>
+        <div class="news-links">
+          <a href="https://www.eurekalert.org/news-releases/1130094" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_06_01.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">02</span></div>
+        <h3 class="news-card-title">Starlink V3 : la promesse d'un débit proche de la fibre depuis l'espace</h3>
+        <div class="news-bornage">Bornage : Communications Spatiales et Satellites</div>
+        <div class="news-meta">
+          <span>📅 18 juin 2026</span>
+          <span>Source : DegroupTest</span>
+          <span>Auteur : Maxime Blondet</span>
+        </div>
+        <p class="news-resume">Starlink franchit les 10 millions d'abonnés dans le monde et prépare le déploiement de ses satellites de troisième génération V3, promettant des débits descendants au gigabit par seconde.</p>
+        <div class="news-links">
+          <a href="https://www.degrouptest.com/actualite/revolution-starlink-v3-le-bond-en-avant-technique-qui-pulverise-les-limites-du-satellite" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_06_18.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+    </div>
+    <!-- JUILLET 2026 -->
+    <div class="month-block">
+      <div class="month-label">Juillet 2026</div>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">01</span></div>
+        <h3 class="news-card-title">Cartographie mondiale des câbles sous-marins qui font tourner Internet (édition 2026)</h3>
+        <div class="news-bornage">Bornage : Réseaux Terrestres à Très Haut Débit</div>
+        <div class="news-meta">
+          <span>📅 2 juillet 2026</span>
+          <span>Source : Mappr</span>
+          <span>Auteur : Non précisé</span>
+        </div>
+        <p class="news-resume">Basée sur le jeu de données TeleGeography de juillet 2026, l'analyse recense 694 systèmes de câbles sous-marins connectés à 1 893 stations d'atterrissage dans le monde, transportant plus de 99 % du trafic intercontinental — les satellites, Starlink inclus, ne représentant qu'une fraction marginale de ce trafic.</p>
+        <div class="news-links">
+          <a href="https://www.mappr.co/submarine-internet-cables/" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_07_02.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">02</span></div>
+        <h3 class="news-card-title">Starship déploie les premiers satellites Starlink V3 lors de son 13ᵉ vol d'essai</h3>
+        <div class="news-bornage">Bornage : Communications Spatiales et Satellites</div>
+        <div class="news-meta">
+          <span>📅 24 juillet 2026</span>
+          <span>Source : Engadget</span>
+          <span>Auteur : Mariella Moon</span>
+        </div>
+        <p class="news-resume">Starship a déployé pour la première fois 20 satellites Starlink V3, des satellites conçus pour supporter jusqu'à 1 Tbps de débit descendant et 160 Gbps en liaison montante (10 et 22 fois plus que la génération V2), avant de se désintégrer dans l'atmosphère 20 minutes plus tard.</p>
+        <div class="news-links">
+          <a href="https://www.engadget.com/2222979/spacex-13th-starship-flight-test-launches-with-starlink-s-next-gen-satellites/" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_07_24.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+    </div>
+    <!-- AOÛT 2026 -->
+    <div class="month-block">
+      <div class="month-label">Août 2026</div>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">01</span></div>
+        <h3 class="news-card-title">Intrication quantique record sur 420 km de fibre optique</h3>
+        <div class="news-bornage">Bornage : Records et Innovations en Transmission</div>
+        <div class="news-meta">
+          <span>📅 11 août 2026</span>
+          <span>Source : Lumière sur Gaia (Physical Review Letters)</span>
+          <span>Auteur : Non précisé</span>
+        </div>
+        <p class="news-resume">Une équipe de l'Université des sciences et technologies de Chine à Hefei a intriqué deux mémoires quantiques atomiques à travers 420 km de fibre optique, soit huit fois le précédent record de 50 km établi par la même équipe en 2020.</p>
+        <div class="news-links">
+          <a href="https://lumieresurgaia.com/2026/08/intrication-quantique-record-deux-memoires-atomiques-reliees-par-420-km-de-fibre-optique/" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_08_29.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-card-top"><span class="news-num">02</span></div>
+        <h3 class="news-card-title">SpaceX demande à la FCC le feu vert pour 100 000 satellites V3</h3>
+        <div class="news-bornage">Bornage : Communications Spatiales et Satellites</div>
+        <div class="news-meta">
+          <span>📅 13 août 2026</span>
+          <span>Source : SpaceX France</span>
+          <span>Auteur : Non précisé</span>
+        </div>
+        <p class="news-resume">SpaceX a déposé en juillet 2026 une demande distincte pour jusqu'à 100 000 satellites V3 dédiés à la connectivité, à ne pas confondre avec le projet Starmind de février portant sur un million de satellites-centres de données.</p>
+        <div class="news-links">
+          <a href="https://www.spacexfrance.com/starlink-v3-100000-satellites-fcc/" target="_blank" rel="noopener">Lire l'article ↗</a>
+          <a href="pdf/News_2026_08_13.pdf" target="_blank" rel="noopener">Voir le PDF 📄</a>
+        </div>
+      </article>
+    </div>
+    <!-- SEPTEMBRE 2026 -->
+    <div class="month-block">
+      <div class="month-label">Septembre 2026</div>
+      <a class="news-slot empty" href="#"><span class="news-num">01</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+      <a class="news-slot empty" href="#"><span class="news-num">02</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+    </div>
+    <!-- OCTOBRE 2026 -->
+    <div class="month-block">
+      <div class="month-label">Octobre 2026</div>
+      <a class="news-slot empty" href="#"><span class="news-num">01</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+      <a class="news-slot empty" href="#"><span class="news-num">02</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+    </div>
+    <!-- NOVEMBRE 2026 -->
+    <div class="month-block">
+      <div class="month-label">Novembre 2026</div>
+      <a class="news-slot empty" href="#"><span class="news-num">01</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+      <a class="news-slot empty" href="#"><span class="news-num">02</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+    </div>
+    <!-- DÉCEMBRE 2026 -->
+    <div class="month-block">
+      <div class="month-label">Décembre 2026</div>
+      <a class="news-slot empty" href="#"><span class="news-num">01</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+      <a class="news-slot empty" href="#"><span class="news-num">02</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+    </div>
+    <!-- JANVIER 2027 -->
+    <div class="month-block">
+      <div class="month-label">Janvier 2027</div>
+      <a class="news-slot empty" href="#"><span class="news-num">01</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+      <a class="news-slot empty" href="#"><span class="news-num">02</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+    </div>
+    <!-- FÉVRIER 2027 -->
+    <div class="month-block">
+      <div class="month-label">Février 2027</div>
+      <a class="news-slot empty" href="#"><span class="news-num">01</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+      <a class="news-slot empty" href="#"><span class="news-num">02</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+    </div>
+    <!-- MARS 2027 -->
+    <div class="month-block">
+      <div class="month-label">Mars 2027</div>
+      <a class="news-slot empty" href="#"><span class="news-num">01</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+      <a class="news-slot empty" href="#"><span class="news-num">02</span><span class="news-title">Titre de l'article — à renseigner</span><span class="news-arrow">↗</span></a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>DUPRESSOIR Nicolas</span> — Portfolio BTS SIO SISR &nbsp;|&nbsp; <span>Campus La Châtaigneraie</span> &nbsp;|&nbsp; 2025–2027
+</footer>
+
+<script>
+document.querySelectorAll('.news-slot.empty').forEach(el => {
+  el.addEventListener('click', e => e.preventDefault());
+});
+</script>
+</body>
+</html>

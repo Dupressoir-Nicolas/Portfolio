@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rectorat — DUPRESSOIR Nicolas · Portfolio BTS SIO SISR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=JetBrains+Mono:wght@300;400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+<div class="scanlines"></div>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="accueil.html" class="nav-logo">ND<span>.portfolio</span></a>
+    <a href="accueil.html">Accueil</a>
+    <a href="veille.html">Veille</a>
+    <a href="stages.html">Stages</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="rectorat.html" class="active">Rectorat</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     PAGE : RECTORAT (E5 / E6)
+════════════════════════════════════════ -->
+<section class="page active" id="rectorat">
+<div class="container">
+  <div class="section-title">Dossier Rectorat</div>
+
+  <div class="rectorat-tabs">
+    <button class="rtab active" data-rtab="e5">E5 — Épreuve</button>
+    <button class="rtab" data-rtab="e6">E6 — Épreuve</button>
+  </div>
+
+  <!-- E5 -->
+  <div class="rtab-content active" id="rtab-e5">
+    <div class="section-title">E5 — Certifications &amp; Documents</div>
+
+    <!-- Certifications CNIL -->
+    <div class="panel panel-accent" style="margin-bottom:2rem">
+      <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:1rem">
+        <span class="tag green">✓ Certification NDU — RGPD CNIL</span>
+        <span style="font-family:var(--font-mono);font-size:.6rem;color:var(--txt2)">5 modules validés · Nota minimale 80%</span>
+      </div>
+      <div class="certif-grid">
+        <!-- Module 1 -->
+        <div class="certif-card" onclick="openLightbox('../Images/NDU_Certification_Module01.jpg')">
+          <div class="certif-preview"><img src="../Images/NDU_Certification_Module01.jpg" alt="Module 1" /></div>
+          <div class="certif-info">
+            <div class="certif-mod">Module 01</div>
+            <div class="certif-name">Le RGPD et ses notions clés</div>
+            <div class="certif-score high">95,56 / 100</div>
+          </div>
+        </div>
+        <!-- Module 2 -->
+        <div class="certif-card" onclick="openLightbox('../Images/NDU_Certification_Module02.jpg')">
+          <div class="certif-preview"><img src="../Images/NDU_Certification_Module02.jpg" alt="Module 2" /></div>
+          <div class="certif-info">
+            <div class="certif-mod">Module 02</div>
+            <div class="certif-name">Les principes de la protection des données</div>
+            <div class="certif-score perfect">100 / 100</div>
+          </div>
+        </div>
+        <!-- Module 3 -->
+        <div class="certif-card" onclick="openLightbox('../Images/NDU_Certification_Module03.jpg')">
+          <div class="certif-preview"><img src="../Images/NDU_Certification_Module03.jpg" alt="Module 3" /></div>
+          <div class="certif-info">
+            <div class="certif-mod">Module 03</div>
+            <div class="certif-name">Les droits des personnes</div>
+            <div class="certif-score high">93,33 / 100</div>
+          </div>
+        </div>
+        <!-- Module 4 -->
+        <div class="certif-card" onclick="openLightbox('../Images/NDU_Certification_Module04.jpg')">
+          <div class="certif-preview"><img src="../Images/NDU_Certification_Module04.jpg" alt="Module 4" /></div>
+          <div class="certif-info">
+            <div class="certif-mod">Module 04</div>
+            <div class="certif-name">Le DPO et les outils de la conformité</div>
+            <div class="certif-score perfect">100 / 100</div>
+          </div>
+        </div>
+        <!-- Module 5 -->
+        <div class="certif-card" onclick="openLightbox('../Images/NDU_Certification_Module05.jpg')">
+          <div class="certif-preview"><img src="../Images/NDU_Certification_Module05.jpg" alt="Module 5" /></div>
+          <div class="certif-info">
+            <div class="certif-mod">Module 05</div>
+            <div class="certif-name">Les collectivités territoriales</div>
+            <div class="certif-score perfect">100 / 100</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pièces jointes -->
+    <div class="section-title">Pièces jointes</div>
+    <div class="pj-list">
+      <a href="../Documents/NDU_BTS_SIO_Tableau_de_synthese_2026.xlsx" class="pj-item" download>
+        <span class="pj-icon">📊</span>
+        <span class="pj-name">Tableau de synthèse E5</span>
+        <span class="tag green">XLSX</span>
+        <span class="pj-size">Télécharger</span>
+      </a>
+      <a href="../Documents/DUPRESSOIR_Nicolas_Convention_de_Stage.pdf" class="pj-item" download>
+        <span class="pj-icon">📄</span>
+        <span class="pj-name">Attestation de stage</span>
+        <span class="tag">PDF</span>
+        <span class="pj-size">Télécharger</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- E6 -->
+  <div class="rtab-content" id="rtab-e6">
+    <div class="coming-soon">
+      <div class="cs-icon">🔒</div>
+      <p>E6 — Coming Soon</p>
+      <p style="margin-top:.5rem;opacity:.5;font-size:.55rem">Contenu à renseigner prochainement</p>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- LIGHTBOX CERTIFICATIONS -->
+<div class="lb-overlay" id="lb-overlay" onclick="closeLightbox()">
+  <img id="lb-img" src="" alt="Certification" />
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span>DUPRESSOIR Nicolas</span> — Portfolio BTS SIO SISR &nbsp;|&nbsp; <span>Campus La Châtaigneraie</span> &nbsp;|&nbsp; 2025–2027
+</footer>
+
+<script>
+/* ─── ONGLETS RECTORAT ─── */
+document.querySelectorAll('.rtab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.rtab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.rtab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('rtab-' + btn.dataset.rtab).classList.add('active');
+  });
+});
+
+/* ─── LIGHTBOX CERTIFICATIONS ─── */
+function openLightbox(src) {
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lb-overlay').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lb-overlay').classList.remove('open');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Réalisations — DUPRESSOIR Nicolas · Portfolio BTS SIO SISR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=JetBrains+Mono:wght@300;400;500;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+<div class="scanlines"></div>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="accueil.html" class="nav-logo">ND<span>.portfolio</span></a>
+    <a href="accueil.html">Accueil</a>
+    <a href="veille.html">Veille</a>
+    <a href="stages.html">Stages</a>
+    <a href="realisations.html" class="active">Réalisations</a>
+    <a href="rectorat.html">Rectorat</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     PAGE : RÉALISATIONS PROFESSIONNELLES
+════════════════════════════════════════ -->
+<section class="page active" id="realisations">
+<div class="container">
+  <div class="section-title">Réalisations Professionnelles</div>
+  <p style="font-size:.9rem;color:var(--txt2);max-width:700px;margin-bottom:.5rem">Portfolio des projets et compétences développées durant mes stages BTS SIO SISR.</p>
+
+  <div class="real-grid">
+    <!-- Slot 1 – vide -->
+    <div class="real-card empty">
+      <div class="real-img"><span style="opacity:.3">📁 Réalisation à venir</span></div>
+      <div class="real-body">
+        <div class="real-stage">Stage 1ère année</div>
+        <div class="real-title">Titre de la réalisation</div>
+        <div class="real-desc">Description courte à compléter.</div>
+        <div class="real-date">Date — à renseigner</div>
+      </div>
+    </div>
+    <!-- Slot 2 – vide -->
+    <div class="real-card empty">
+      <div class="real-img"><span style="opacity:.3">📁 Réalisation à venir</span></div>
+      <div class="real-body">
+        <div class="real-stage">Stage 1ère année</div>
+        <div class="real-title">Titre de la réalisation</div>
+        <div class="real-desc">Description courte à compléter.</div>
+        <div class="real-date">Date — à renseigner</div>
+      </div>
+    </div>
+    <!-- Slot 3 – vide -->
+    <div class="real-card empty">
+      <div class="real-img"><span style="opacity:.3">📁 Réalisation à venir</span></div>
+      <div class="real-body">
+        <div class="real-stage">Stage 1ère année</div>
+        <div class="real-title">Titre de la réalisation</div>
+        <div class="real-desc">Description courte à compléter.</div>
+        <div class="real-date">Date — à renseigner</div>
+      </div>
+    </div>
+    <!-- Slot 4 – vide -->
+    <div class="real-card empty">
+      <div class="real-img"><span style="opacity:.3">📁 Réalisation à venir</span></div>
+      <div class="real-body">
+        <div class="real-stage">Stage 2ème année</div>
+        <div class="real-title">Titre de la réalisation</div>
+        <div class="real-desc">Description courte à compléter.</div>
+        <div class="real-date">Date — à renseigner</div>
+      </div>
+    </div>
+    <!-- Slot 5 – vide -->
+    <div class="real-card empty">
+      <div class="real-img"><span style="opacity:.3">📁 Réalisation à venir</span></div>
+      <div class="real-body">
+        <div class="real-stage">Stage 2ème année</div>
+        <div class="real-title">Titre de la réalisation</div>
+        <div class="real-desc">Description courte à compléter.</div>
+        <div class="real-date">Date — à renseigner</div>
+      </div>
+    </div>
+    <!-- Slot 6 – vide -->
+    <div class="real-card empty">
+      <div class="real-img"><span style="opacity:.3">📁 Réalisation à venir</span></div>
+      <div class="real-body">
+        <div class="real-stage">Stage 2ème année</div>
+        <div class="real-title">Titre de la réalisation</div>
+        <div class="real-desc">Description courte à compléter.</div>
+        <div class="real-date">Date — à renseigner</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Note de fonctionnement -->
+  <div class="panel mt2" style="border-style:dashed;opacity:.5">
+    <p style="font-family:var(--font-mono);font-size:.62rem;color:var(--txt2);letter-spacing:.08em">
+      ⓘ Chaque carte est cliquable et ouvre un panneau détail : description complète, compétences BTS SIO (B1, B2…), technologies utilisées, visuels et informations de stage.
+    </p>
+  </div>
+</div>
+</section>
+
+<!-- MODAL RÉALISATION -->
+<div class="modal-overlay" id="modal-real">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close">✕ Fermer</button>
+    <div class="modal-title" id="modal-title">Titre de la réalisation</div>
+    <div class="flex gap1 wrap mt1">
+      <span class="tag" id="modal-stage">Stage 1ère année</span>
+      <span class="tag" id="modal-date">Date</span>
+    </div>
+    <img class="modal-img" id="modal-img" src="" alt="" />
+    <div class="modal-section-label">Description</div>
+    <p id="modal-desc" style="font-size:.9rem;color:var(--txt)">Description à renseigner.</p>
+    <div class="modal-section-label">Compétences développées</div>
+    <ul class="comp-list" id="modal-comps">
+      <li><span>B 1.2</span> — Répondre aux incidents et aux demandes d'assistance</li>
+    </ul>
+    <div class="modal-section-label">Technologies utilisées</div>
+    <div class="tech-list" id="modal-techs">
+      <span class="tag">Technologie</span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span>DUPRESSOIR Nicolas</span> — Portfolio BTS SIO SISR &nbsp;|&nbsp; <span>Campus La Châtaigneraie</span> &nbsp;|&nbsp; 2025–2027
+</footer>
+
+<script>
+/* ─── MODAL RÉALISATIONS ─── */
+const realisations = [
+  /* Exemple :
+  {
+    title: "Installation réseau",
+    stage: "Stage 1ère année",
+    date: "Mai 2026",
+    img: "../Images/real_01.png",
+    desc: "Description complète de la réalisation...",
+    comps: [
+      { code: "B 1.2", label: "Répondre aux incidents et demandes d'assistance", details: "Traiter des demandes concernant les services réseau" }
+    ],
+    techs: ["Cisco IOS", "PowerShell", "Windows Server"]
+  }
+  */
+];
+
+document.querySelectorAll('.real-card:not(.empty)').forEach((card, i) => {
+  card.addEventListener('click', () => {
+    const r = realisations[i];
+    if (!r) return;
+    document.getElementById('modal-title').textContent = r.title;
+    document.getElementById('modal-stage').textContent = r.stage;
+    document.getElementById('modal-date').textContent  = r.date;
+    document.getElementById('modal-img').src           = r.img || '';
+    document.getElementById('modal-desc').textContent  = r.desc;
+    const ul = document.getElementById('modal-comps');
+    ul.innerHTML = r.comps.map(c => `<li><span>${c.code}</span> — ${c.label}<br><span style="color:var(--txt2);font-size:.6rem">${c.details}</span></li>`).join('');
+    const tl = document.getElementById('modal-techs');
+    tl.innerHTML = r.techs.map(t => `<span class="tag">${t}</span>`).join('');
+    document.getElementById('modal-real').classList.add('open');
+  });
+});
+
+document.getElementById('modal-close').addEventListener('click', () => {
+  document.getElementById('modal-real').classList.remove('open');
+});
+document.getElementById('modal-real').addEventListener('click', e => {
+  if (e.target === document.getElementById('modal-real'))
+    document.getElementById('modal-real').classList.remove('open');
+});
+</script>
+</body>
+</html>
