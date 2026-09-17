@@ -31,27 +31,460 @@
 <div class="container">
   <div class="section-title">Stages</div>
 
-  <div class="stages-grid">
-    <!-- Stage 1 -->
+  <!-- ─── Onglets ─── -->
+  <div class="rectorat-tabs">
+    <button class="rtab active" data-rtab="a1">1<sup>ère</sup> année — Heliaq</button>
+    <button class="rtab" data-rtab="a2">2<sup>ème</sup> année</button>
+  </div>
+
+  <!-- ══════════ ONGLET 1ère ANNÉE ══════════ -->
+  <div class="rtab-content active" id="rtab-a1">
+
+    <!-- Fiche d'identité du stage -->
     <div class="stage-card">
       <div class="stage-header">
-        <div class="stage-num">Stage 1ère année BTS SIO</div>
-        <div class="stage-title">Stage en entreprise</div>
+        <div class="stage-num">Stage 1ère année BTS SIO SISR</div>
+        <div class="stage-title">Heliaq — Direction technique, agence de Rouen</div>
       </div>
       <div class="stage-body">
-        <div class="stage-period"><span class="dot green"></span> 26 mai – 27 juin 2026</div>
-        <div class="placeholder-block">
-          <div class="ph-icon">🏢</div>
-          <p>Informations à compléter</p>
-          <p style="margin-top:.4rem;opacity:.6">Entreprise, missions, compétences développées…</p>
+        <div class="stage-meta">
+          <div class="meta-item">
+            <div class="meta-label">Entreprise</div>
+            <div class="meta-value">Heliaq (ex-Quadria → Koesio Corporate IT)</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Service</div>
+            <div class="meta-value">Direction technique — Agence de Rouen (Bois-Guillaume)</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Période</div>
+            <div class="meta-value">26 mai 2026 — 26 juin 2026</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Durée</div>
+            <div class="meta-value">5 semaines</div>
+          </div>
+        </div>
+
+        <div class="modal-section-label">Contexte</div>
+        <p class="stage-prose">
+          Premier stage réalisé chez Heliaq, une Entreprise de Services du Numérique (ESN)
+          spécialisée dans les infrastructures IT, le cloud, la cybersécurité et l'infogérance.
+          Née de l'évolution Quadria → Koesio Corporate IT → Heliaq (mars 2025), l'entreprise
+          couvre depuis son agence du plateau Nord de Rouen la Seine-Maritime et l'Eure
+          (Le Havre, Harfleur, Pont-Audemer, Fécamp, Bolbec). Intégré à la direction technique,
+          j'ai découvert le fonctionnement concret d'un prestataire infrastructure : masterisation
+          de parc, audit réseau et administration système chez des clients réels.
+        </p>
+
+        <div class="modal-section-label">Organigramme</div>
+        <div class="figure-wide" onclick="openLightbox('../Images/stages/organigramme-heliaq.jpg')">
+          <img src="../Images/stages/organigramme-heliaq.jpg" alt="Organigramme de la direction technique Heliaq" />
+          <div class="shot-cap">Direction technique Heliaq — agence de Rouen · position du stagiaire</div>
+        </div>
+
+        <div class="modal-section-label">Activités de l'entreprise</div>
+        <div class="tech-list">
+          <span class="tag">Cybersécurité</span>
+          <span class="tag">Infogérance</span>
+          <span class="tag">Cloud</span>
+          <span class="tag">Infrastructures IT</span>
+          <span class="tag">Digital Workplace</span>
+          <span class="tag">Maintenance</span>
+          <span class="tag">Services managés (Heliaq Care)</span>
+          <span class="tag">Logistique &amp; déploiement</span>
+        </div>
+
+        <div class="modal-section-label">Environnement technologique</div>
+        <div class="tech-list">
+          <span class="tag green">Windows Server</span>
+          <span class="tag green">Active Directory</span>
+          <span class="tag green">DNS / DHCP</span>
+          <span class="tag green">VPN — FortiClient</span>
+          <span class="tag green">Fortinet</span>
+          <span class="tag green">Cisco</span>
+          <span class="tag green">Acronis</span>
+          <span class="tag green">Ninite</span>
+          <span class="tag green">FileZilla</span>
+          <span class="tag green">Ekahau</span>
+          <span class="tag green">Visio</span>
+          <span class="tag green">TeamViewer</span>
+          <span class="tag green">PowerShell</span>
+          <span class="tag green">Bash</span>
+          <span class="tag green">Sage X3</span>
+          <span class="tag green">Microsoft 365</span>
         </div>
       </div>
     </div>
 
-    <!-- Stage 2 -->
+    <!-- ─── Mission 1 ─── -->
+    <div class="mission-card">
+      <div class="mission-head">
+        <div class="mission-num">Mission 01 — Semaines 3 à 5</div>
+        <div class="mission-title">Masterisation de postes de travail &amp; déploiement PXE</div>
+      </div>
+      <div class="mission-body">
+        <div class="stage-period"><span class="dot green"></span> Image système standardisée · déploiement réseau</div>
+
+        <div class="modal-section-label">Besoin &amp; objectifs</div>
+        <p class="stage-prose">
+          Créer une image système standardisée afin d'uniformiser la configuration des postes
+          informatiques. L'objectif : faciliter le déploiement des ordinateurs, réduire le temps
+          d'installation et simplifier la maintenance grâce à une infrastructure de sauvegarde
+          centralisée.
+        </p>
+
+        <div class="modal-section-label">Travail réalisé</div>
+        <ul class="bullet-list">
+          <li>Préparation du poste de référence et raccordement au réseau de l'entreprise</li>
+          <li>Installation et configuration de l'image système (Windows), mises à jour et personnalisation du bureau</li>
+          <li>Déploiement automatisé des logiciels clients via Ninite</li>
+          <li>Transfert de l'image vers le serveur avec FileZilla, sauvegarde via Acronis True Image</li>
+          <li>Script Acronis en WinPE : <code>wpeinit</code> (init réseau), temporisation, <code>net use Z:</code> (montage du partage serveur), lancement de TrueImage.exe</li>
+          <li>Restauration par sélection de l'image, du mode, de la date de sauvegarde et des partitions du disque</li>
+          <li>Déploiement sur les autres postes par démarrage réseau PXE</li>
+          <li>Paramétrages finaux : mises à jour, mise en domaine, liaison des licences Microsoft</li>
+        </ul>
+
+        <div class="modal-section-label">Démarrage du poste en PXE</div>
+        <div class="figure-wide" onclick="openLightbox('../Images/stages/pxe-demarrage.jpg')">
+          <img src="../Images/stages/pxe-demarrage.jpg" alt="Menu de démarrage UEFI — amorçage réseau PXE" />
+          <div class="shot-cap">Sélection de l'amorçage réseau ONBOARD NIC (IPV4) dans le menu de boot</div>
+        </div>
+
+        <div class="modal-section-label">Captures — déploiement &amp; restauration</div>
+        <div class="shot-grid">
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-01-logiciels-clients.jpg')">
+            <img src="../Images/stages/m1-01-logiciels-clients.jpg" alt="Installation des logiciels clients" />
+            <div class="shot-cap">Installation des logiciels clients</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-02-logiciels-clients.jpg')">
+            <img src="../Images/stages/m1-02-logiciels-clients.jpg" alt="Installation des logiciels clients" />
+            <div class="shot-cap">Installation des logiciels clients</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-03-ninite.jpg')">
+            <img src="../Images/stages/m1-03-ninite.jpg" alt="Ninite installe les logiciels clients" />
+            <div class="shot-cap">Ninite installe certains logiciels clients</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-04-demarrage-shift.jpg')">
+            <img src="../Images/stages/m1-04-demarrage-shift.jpg" alt="Démarrage des nouveaux postes avec Shift" />
+            <div class="shot-cap">Démarrage des nouveaux postes (touche Shift)</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-05-boitier-acronis.jpg')">
+            <img src="../Images/stages/m1-05-boitier-acronis.jpg" alt="Branchement du boîtier Acronis" />
+            <div class="shot-cap">Branchement du boîtier Acronis</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-06-redemarrage-usb-acronis.jpg')">
+            <img src="../Images/stages/m1-06-redemarrage-usb-acronis.jpg" alt="Redémarrage sur le périphérique USB Acronis" />
+            <div class="shot-cap">Redémarrage sur le périphérique USB Acronis</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-07-script-acronis.jpg')">
+            <img src="../Images/stages/m1-07-script-acronis.jpg" alt="Lancement du script Acronis" />
+            <div class="shot-cap">Lancement du script Acronis (WinPE)</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-08-choix-sauvegarde-restauration.jpg')">
+            <img src="../Images/stages/m1-08-choix-sauvegarde-restauration.jpg" alt="Choix entre sauvegarde et restauration" />
+            <div class="shot-cap">Choix : sauvegarde ou restauration</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-09-restauration-disque.jpg')">
+            <img src="../Images/stages/m1-09-restauration-disque.jpg" alt="Restauration du disque" />
+            <div class="shot-cap">Restauration du disque</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-10-recherche-image.jpg')">
+            <img src="../Images/stages/m1-10-recherche-image.jpg" alt="Recherche de l'image de restauration" />
+            <div class="shot-cap">Recherche de l'image de restauration</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-11-selection-image.jpg')">
+            <img src="../Images/stages/m1-11-selection-image.jpg" alt="Sélection de l'image de restauration" />
+            <div class="shot-cap">Sélection de l'image de restauration</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-12-mode-restauration.jpg')">
+            <img src="../Images/stages/m1-12-mode-restauration.jpg" alt="Choix du mode de restauration" />
+            <div class="shot-cap">Choix du mode de restauration</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-13-recherche-par-date.jpg')">
+            <img src="../Images/stages/m1-13-recherche-par-date.jpg" alt="Recherche par date de la sauvegarde" />
+            <div class="shot-cap">Recherche par date de la sauvegarde</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-14-selection-partitions.jpg')">
+            <img src="../Images/stages/m1-14-selection-partitions.jpg" alt="Sélection des parties du disque à restaurer" />
+            <div class="shot-cap">Sélection des parties du disque à restaurer</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-15-confirmation-restauration.jpg')">
+            <img src="../Images/stages/m1-15-confirmation-restauration.jpg" alt="Confirmation de la restauration" />
+            <div class="shot-cap">Confirmation de la restauration</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-16-parametrage-final.jpg')">
+            <img src="../Images/stages/m1-16-parametrage-final.jpg" alt="Paramétrages finaux" />
+            <div class="shot-cap">Paramétrages finaux — mise à jour</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-17-parametrage-final.jpg')">
+            <img src="../Images/stages/m1-17-parametrage-final.jpg" alt="Paramétrages finaux" />
+            <div class="shot-cap">Paramétrages finaux — mise en domaine</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-18-parametrage-final.jpg')">
+            <img src="../Images/stages/m1-18-parametrage-final.jpg" alt="Paramétrages finaux" />
+            <div class="shot-cap">Paramétrages finaux — liaison de licence Microsoft</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m1-19-parametrage-final.jpg')">
+            <img src="../Images/stages/m1-19-parametrage-final.jpg" alt="Paramétrages finaux" />
+            <div class="shot-cap">Paramétrages finaux — poste prêt à la livraison</div>
+          </div>
+        </div>
+
+        <div class="modal-section-label">Environnement technique</div>
+        <div class="tech-list">
+          <span class="tag">Windows / WinPE</span>
+          <span class="tag">PXE</span>
+          <span class="tag">Acronis True Image</span>
+          <span class="tag">Ninite</span>
+          <span class="tag">FileZilla</span>
+          <span class="tag">Serveur de déploiement</span>
+        </div>
+
+        <div class="modal-section-label">Compétences Bloc 1 mises en œuvre</div>
+        <div class="comp-block">
+          <div class="comp-code">B1 — Gérer le patrimoine informatique</div>
+          <ul class="comp-list">
+            <li>Recenser et identifier les ressources numériques</li>
+            <li>Exploiter des référentiels, normes et standards</li>
+            <li>Vérifier les conditions de la continuité d'un service</li>
+            <li>Gérer des sauvegardes</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B2 — Répondre aux incidents et aux demandes d'assistance et d'évolution</div>
+          <ul class="comp-list">
+            <li>Collecter, suivre et orienter des demandes</li>
+            <li>Traiter des demandes concernant les services réseau, système, applicatifs</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B4 — Travailler en mode projet</div>
+          <ul class="comp-list">
+            <li>Analyser les objectifs et les modalités d'organisation d'un projet</li>
+            <li>Planifier les activités</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B5 — Mettre à disposition des utilisateurs un service informatique</div>
+          <ul class="comp-list">
+            <li>Réaliser les tests d'intégration et d'acceptation d'un service</li>
+            <li>Déployer un service</li>
+            <li>Accompagner les utilisateurs dans la mise en place d'un service</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Mission 2 ─── -->
+    <div class="mission-card">
+      <div class="mission-head">
+        <div class="mission-num">Mission 02</div>
+        <div class="mission-title">Audit Wi-Fi d'un bâtiment sous Ekahau</div>
+      </div>
+      <div class="mission-body">
+        <div class="stage-period"><span class="dot green"></span> Cartographie radio · couverture &amp; plan de fréquences</div>
+
+        <div class="modal-section-label">Besoin &amp; objectifs</div>
+        <p class="stage-prose">
+          Réaliser l'audit de couverture Wi-Fi d'un bâtiment client afin de vérifier la qualité du
+          signal, positionner correctement les points d'accès et contrôler le plan de canaux sur
+          les bandes 2,4 GHz et 5 GHz.
+        </p>
+
+        <div class="modal-section-label">Travail réalisé</div>
+        <ul class="bullet-list">
+          <li>Relevé sur site : tracé du parcours de mesure étage par étage (rez-de-chaussée et étage)</li>
+          <li>Repérage et positionnement des points d'accès sur les plans</li>
+          <li>Cartographie complète de la couverture du rez-de-chaussée</li>
+          <li>Analyse du canal de fréquences et du recouvrement entre AP</li>
+          <li>Audit des bandes 2,4 GHz et 5 GHz avec le Sidekick 1 — constat de sa limite : il ne capte pas le Wi-Fi 6</li>
+          <li>Restitution des plans et schémas d'infrastructure sous Visio</li>
+        </ul>
+
+        <div class="modal-section-label">Captures — audit Ekahau</div>
+        <div class="shot-grid">
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-01-trace.jpg')">
+            <img src="../Images/stages/m2-01-trace.jpg" alt="Tracé du parcours de mesure" />
+            <div class="shot-cap">Tracé du parcours de mesure</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-02-ap-etage-dessus.jpg')">
+            <img src="../Images/stages/m2-02-ap-etage-dessus.jpg" alt="Points d'accès de l'étage du dessus" />
+            <div class="shot-cap">AP — étage du dessus</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-03-ap-etage-dessus.jpg')">
+            <img src="../Images/stages/m2-03-ap-etage-dessus.jpg" alt="Points d'accès de l'étage du dessus" />
+            <div class="shot-cap">AP — étage du dessus</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-04-ap-rez-de-chaussee.jpg')">
+            <img src="../Images/stages/m2-04-ap-rez-de-chaussee.jpg" alt="Points d'accès du rez-de-chaussée" />
+            <div class="shot-cap">AP — rez-de-chaussée</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-05-ap-etage.jpg')">
+            <img src="../Images/stages/m2-05-ap-etage.jpg" alt="Points d'accès de l'étage" />
+            <div class="shot-cap">AP — étage</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-06-rez-de-chaussee-complet.jpg')">
+            <img src="../Images/stages/m2-06-rez-de-chaussee-complet.jpg" alt="Couverture complète du rez-de-chaussée" />
+            <div class="shot-cap">Rez-de-chaussée complet</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-07-canal-de-frequences.jpg')">
+            <img src="../Images/stages/m2-07-canal-de-frequences.jpg" alt="Plan des canaux de fréquences" />
+            <div class="shot-cap">Canal de fréquences</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-08-sidekick.jpg')">
+            <img src="../Images/stages/m2-08-sidekick.jpg" alt="Audit Wi-Fi avec le Sidekick 1" />
+            <div class="shot-cap">Audit 2,4 / 5 GHz — Sidekick 1</div>
+          </div>
+          <div class="shot" onclick="openLightbox('../Images/stages/m2-09-sidekick.jpg')">
+            <img src="../Images/stages/m2-09-sidekick.jpg" alt="Audit Wi-Fi avec le Sidekick 1" />
+            <div class="shot-cap">Audit 2,4 / 5 GHz — Sidekick 1</div>
+          </div>
+        </div>
+
+        <div class="modal-section-label">Environnement technique</div>
+        <div class="tech-list">
+          <span class="tag">Ekahau</span>
+          <span class="tag">Sidekick 1</span>
+          <span class="tag">Wi-Fi 2,4 / 5 GHz</span>
+          <span class="tag">Microsoft Visio</span>
+        </div>
+
+        <div class="modal-section-label">Compétences Bloc 1 mises en œuvre</div>
+        <div class="comp-block">
+          <div class="comp-code">B1 — Gérer le patrimoine informatique</div>
+          <ul class="comp-list">
+            <li>Recenser et identifier les ressources numériques</li>
+            <li>Exploiter des référentiels, normes et standards</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B2 — Répondre aux incidents et aux demandes d'assistance et d'évolution</div>
+          <ul class="comp-list">
+            <li>Traiter des demandes concernant les services réseau, système, applicatifs</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B4 — Travailler en mode projet</div>
+          <ul class="comp-list">
+            <li>Analyser les objectifs et les modalités d'organisation d'un projet</li>
+            <li>Planifier les activités</li>
+            <li>Évaluer les indicateurs de suivi et analyser les écarts</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B5 — Mettre à disposition des utilisateurs un service informatique</div>
+          <ul class="comp-list">
+            <li>Réaliser les tests d'intégration et d'acceptation d'un service</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B6 — Organiser son développement professionnel</div>
+          <ul class="comp-list">
+            <li>Mettre en œuvre des outils et stratégies de veille informationnelle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Mission 3 ─── -->
+    <div class="mission-card">
+      <div class="mission-head">
+        <div class="mission-num">Mission 03</div>
+        <div class="mission-title">Création d'un nouveau VLAN</div>
+      </div>
+      <div class="mission-body">
+        <div class="stage-period"><span class="dot green"></span> Segmentation réseau · configuration Cisco / Fortinet</div>
+
+        <div class="modal-section-label">Besoin &amp; objectifs</div>
+        <p class="stage-prose">
+          Segmenter le réseau client par la création d'un nouveau VLAN, afin d'isoler les flux,
+          appliquer les niveaux d'habilitation adaptés et documenter l'architecture obtenue.
+        </p>
+
+        <div class="modal-section-label">Travail réalisé</div>
+        <ul class="bullet-list">
+          <li>Analyse de l'existant et définition du plan d'adressage du nouveau VLAN</li>
+          <li>Configuration du VLAN sur les équipements (commandes Cisco, règles Fortinet)</li>
+          <li>Mise en place et vérification des niveaux d'habilitation associés</li>
+          <li>Réalisation du schéma réseau de la nouvelle segmentation sous Visio</li>
+          <li>Tests de connectivité et accompagnement lors de la mise en service</li>
+        </ul>
+
+        <div class="modal-section-label">Schéma du VLAN</div>
+        <div class="figure-wide" onclick="openLightbox('../Images/stages/m3-01-schema-vlan.jpg')">
+          <img src="../Images/stages/m3-01-schema-vlan.jpg" alt="Schéma du nouveau VLAN" />
+          <div class="shot-cap">Schéma de la segmentation réseau après création du nouveau VLAN</div>
+        </div>
+
+        <div class="modal-section-label">Environnement technique</div>
+        <div class="tech-list">
+          <span class="tag">Cisco</span>
+          <span class="tag">Fortinet</span>
+          <span class="tag">VLAN / segmentation</span>
+          <span class="tag">Microsoft Visio</span>
+        </div>
+
+        <div class="modal-section-label">Compétences Bloc 1 mises en œuvre</div>
+        <div class="comp-block">
+          <div class="comp-code">B1 — Gérer le patrimoine informatique</div>
+          <ul class="comp-list">
+            <li>Recenser et identifier les ressources numériques</li>
+            <li>Exploiter des référentiels, normes et standards</li>
+            <li>Mettre en place et vérifier les niveaux d'habilitation</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B2 — Répondre aux incidents et aux demandes d'assistance et d'évolution</div>
+          <ul class="comp-list">
+            <li>Traiter des demandes concernant les services réseau, système, applicatifs</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B4 — Travailler en mode projet</div>
+          <ul class="comp-list">
+            <li>Analyser les objectifs et les modalités d'organisation d'un projet</li>
+            <li>Planifier les activités</li>
+            <li>Évaluer les indicateurs de suivi et analyser les écarts</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <div class="comp-code">B5 — Mettre à disposition des utilisateurs un service informatique</div>
+          <ul class="comp-list">
+            <li>Réaliser les tests d'intégration et d'acceptation d'un service</li>
+            <li>Déployer un service</li>
+            <li>Accompagner les utilisateurs dans la mise en place d'un service</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Bilan ─── -->
     <div class="stage-card">
       <div class="stage-header">
-        <div class="stage-num">Stage 2ème année BTS SIO</div>
+        <div class="stage-num">Bilan</div>
+        <div class="stage-title">Ce que ce stage m'a apporté</div>
+      </div>
+      <div class="stage-body">
+        <p class="stage-prose">
+          Durant ces cinq semaines, j'ai acquis de nombreuses compétences qui me seront utiles dans
+          la poursuite de mes études comme dans mon futur parcours professionnel. J'ai découvert le
+          monde du travail et compris que la protection des données est un élément essentiel du
+          domaine professionnel. Cette période m'a permis de développer de nouvelles connaissances
+          et de gagner en expérience ; elle a renforcé mon intérêt pour l'entreprise et m'a donné
+          envie d'effectuer d'autres stages afin de continuer à progresser.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════ ONGLET 2ème ANNÉE ══════════ -->
+  <div class="rtab-content" id="rtab-a2">
+    <div class="stage-card">
+      <div class="stage-header">
+        <div class="stage-num">Stage 2ème année BTS SIO SISR</div>
         <div class="stage-title">Stage en entreprise</div>
       </div>
       <div class="stage-body">
@@ -59,17 +492,45 @@
         <div class="placeholder-block">
           <div class="ph-icon">⏳</div>
           <p>À venir</p>
-          <p style="margin-top:.4rem;opacity:.6">Informations à renseigner ultérieurement</p>
+          <p style="margin-top:.4rem;opacity:.6">Entreprise, missions, compétences validées…</p>
         </div>
       </div>
     </div>
   </div>
+
 </div>
 </section>
+
+<!-- LIGHTBOX CAPTURES -->
+<div class="lb-overlay" id="lb-overlay" onclick="closeLightbox()">
+  <img id="lb-img" src="" alt="Capture de stage" />
+</div>
 
 <!-- FOOTER -->
 <footer>
   <span>DUPRESSOIR Nicolas</span> — Portfolio BTS SIO SISR &nbsp;|&nbsp; <span>Campus La Châtaigneraie</span> &nbsp;|&nbsp; 2025–2027
 </footer>
+
+<script>
+/* ─── ONGLETS STAGES ─── */
+document.querySelectorAll('.rtab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.rtab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.rtab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('rtab-' + btn.dataset.rtab).classList.add('active');
+  });
+});
+
+/* ─── LIGHTBOX CAPTURES ─── */
+function openLightbox(src) {
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lb-overlay').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lb-overlay').classList.remove('open');
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
 </body>
 </html>
