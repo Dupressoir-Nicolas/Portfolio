@@ -414,6 +414,15 @@ nav a.active::before {
 .exp-title { font-size: .95rem; font-weight: 700; color: var(--txt-hi); line-height: 1.3; }
 .exp-org { font-family: var(--font-mono); font-size: .6rem; color: var(--green); letter-spacing: .1em; text-transform: uppercase; margin: .2rem 0 .4rem; }
 .exp-desc { font-size: .85rem; color: var(--txt2); }
+.exp-desc a {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  color: var(--cyan);
+  text-decoration: none;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+.exp-desc a:hover { text-decoration: underline; }
 
 /* ═══════════════════════════════════════════════
    PAGE : VEILLE
